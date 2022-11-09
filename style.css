@@ -21,6 +21,10 @@ header {
   	font-size: 17px;
 }
 
+.topnav a:hover{
+	color: dodgerblue;
+}
+
 .topnav-right{
 	float:right;
 }

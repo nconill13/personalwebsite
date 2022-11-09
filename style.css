@@ -5,12 +5,12 @@
 
 header {
 	font-family: "Poppins", sans-serif;
-	margin-bottom: 20%;
+	margin-bottom: 15%;
 }
 
 body {
 	margin: 0px;
-	/* background-color: silver; */
+	font-family: "Poppins", sans-serif;
 	background-image: linear-gradient(176deg, #1E90FF 70%, #F4F4F4 calc(70% + 2px))
 }
 
@@ -40,6 +40,7 @@ body {
 }
 
 .welcome {
+	
 }
 
 .profile-picture {

@@ -7,6 +7,11 @@ header {
 	font-family: "Poppins", sans-serif;
 }
 
+body {
+	margin: 0px;
+	background-color: silver;
+}
+
 .topnav {
 	overflow: hidden;
  	background-color: #333;
@@ -29,6 +34,11 @@ header {
 	float:right;
 }
 
-body {
-	margin: 0px;
+.profile-picture {
+	display: block;
+ 	margin-left: auto;
+  	margin-right: auto;
+  	width: 25%;
+	border-radius: 50%;
+	border: 5px solid white;
 }

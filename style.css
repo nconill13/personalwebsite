@@ -21,7 +21,8 @@ body {
 
 .topnav {
 	overflow: hidden;
- 	background-color: #000a0e;
+ 	/* background-color: #000a0e; */
+	background-color: #0c1c2d;
 	position: fixed;
  	top: 0;
   	width: 100%;
@@ -70,6 +71,15 @@ body {
 	margin-bottom: 5%;
 }
 
+.section-title {
+	font-family: "Poppins", sans-serif;
+	color: white;
+	font-size: 30px;
+	font-style: italic;
+	text-align: center;
+	margin-bottom: 5%;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -93,11 +103,17 @@ body {
 	width: 60%;
 }
 
+.content-box {
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
 
 .about {
 	padding-top: 5%;
 	padding-bottom: 5%;
-	background-color: gainsboro;
+	/* background-color: gainsboro; */
+	background-color: #0c1c2d;
 }
 
 .about-picture-me {
@@ -110,9 +126,9 @@ body {
 }
 
 .experience {
-	padding-top: 5%;
+	padding-top: 10%;
 	padding-bottom: 5%;
-	background-color: grey;
+	background-color: #0c1c2d;
 }
 
 .skills {

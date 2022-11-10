@@ -87,16 +87,14 @@
 	<!-- Experience -->
 	<section class="experience" id="experience">
 		
-		<div class="section-title">
-			<i class="fa-solid fa-briefcase"></i>&ensp;Experience
-		</div>
+		<div class="section-title"><i class="fa-solid fa-briefcase"></i>&ensp;Experience</div>
 		
-		
+		<!-- Experience Table -->
 		<div class="content-box" style="color: white">
-			Random words here. About my life or something. Ya know. <br><br>
 			
 			<div class="row">
-			
+				
+				<!-- Tabs -->
 				<div class="column experience-tabs">
 					<button class="experience-links" onClick="openExperience(event, 'af-career')">Air Force</button>
 					<button class="experience-links" onClick="openExperience(event, 'af-intern-1')">AF PCIP 1</button>
@@ -104,19 +102,29 @@
 					<button class="experience-links" onClick="openExperience(event, 'mitre')">MITRE</button>
 				</div>
 
-				<div class="column experience-details">	
-					<div id="af-career" class="experience-content">Air Force career stuff.</div>
-					<div id="af-intern-1" class="experience-content">BIFROST portal stuff.</div>
-					<div id="af-intern-2" class="experience-content">CROWS stuff.</div>
-					<div id="mitre" class="experience-content">MITRE stuff.</div>
+				<!-- Details -->
+			  <div class="column">	
+					
+				  	<div id="af-career" class="experience-content" style="display: block">
+						Will have everything about new career. Please go all the way to the right and please wrap.&nbsp; &nbsp;
+					</div>
+					
+				  <div id="af-intern-1" class="experience-content">
+						Will have everything from my resume shown here nicely for the BIFROST portal.
+					</div>
+					
+				  <div id="af-intern-2" class="experience-content">CROWS stuff.</div>
+					
+				  <div id="mitre" class="experience-content">MITRE stuff.</div>
+					
 				</div>
 					
-					<!-- Show Experience Content (JS) -->
+				<!-- Show Experience Content (JS) -->
 				<script>
 				function openExperience(evt, experienceName) {
 					var i, experiencecontent, experiencelinks;
 					experiencecontent = document.getElementsByClassName("experience-content");
-					for (i=0; i < experiencelinks.length; i++) {
+					for (i=0; i < experiencecontent.length; i++) {
 						experiencecontent[i].style.display = "none";
 					}
 					experiencelinks = document.getElementsByClassName("experience-links");

@@ -104,34 +104,29 @@
 					<button class="experience-links" onClick="openExperience(event, 'mitre')">MITRE</button>
 				</div>
 
-				<div class="column experience-details">
-					
-					<div id="af-career" class="active">Air Force career stuff.</div>
-					
-					<div id="af-internship-1" class="experience-content">BIFROST portal stuff.</div>
-					
-					<div id="af-internship-2" class="experience-content">CROWS stuff.</div>
-					
-					<div id="mitre-internship" class="experience-content">MITRE stuff.</div>
+				<div class="column experience-details">	
+					<div id="af-career" class="experience-content">Air Force career stuff.</div>
+					<div id="af-intern-1" class="experience-content">BIFROST portal stuff.</div>
+					<div id="af-intern-2" class="experience-content">CROWS stuff.</div>
+					<div id="mitre" class="experience-content">MITRE stuff.</div>
+				</div>
 					
 					<!-- Show Experience Content (JS) -->
-					<script>
-					function openExperience(evt, experienceName) {
-						var i, experiencecontent, experiencelinks;
-						experiencecontent = document.getElementsByClassName("experience-content");
-						for (i=0; i < experiencelinks.length; i++) {
-							experiencecontent[i].style.display = "none";
-						}
-						experiencelinks = document.getElementsByClassName("experience-links");
-						for (i=0; i < experiencelinks.length; i++) {
-							experiencelinks[i].className = experiencelinks[i].className.replace("active", "")
-						}
-						document.getElementById(experienceName).style.display = "block";
-						evt.currentTarget.className += "active";
+				<script>
+				function openExperience(evt, experienceName) {
+					var i, experiencecontent, experiencelinks;
+					experiencecontent = document.getElementsByClassName("experience-content");
+					for (i=0; i < experiencelinks.length; i++) {
+						experiencecontent[i].style.display = "none";
 					}
-					</script>
-					
-				</div>
+					experiencelinks = document.getElementsByClassName("experience-links");
+					for (i=0; i < experiencelinks.length; i++) {
+						experiencelinks[i].className = experiencelinks[i].className.replace("active", "")
+					}
+					document.getElementById(experienceName).style.display = "block";
+					evt.currentTarget.className += "active";
+				}
+				</script>
 				
 			</div>
 			

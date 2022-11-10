@@ -31,9 +31,9 @@ body {
   	float: left;
 	color: #f2f2f2;
   	text-align: center;
-  	padding: 14px 16px;
+  	padding: .875rem 1rem;
   	text-decoration: none;
-  	font-size: 17px;
+  	font-size: 1.063rem;
 }
 
 .topnav a:hover{
@@ -119,6 +119,31 @@ body {
 	padding-top: 5%;
 	padding-bottom: 5%;
 	background-color: white;
+}
+
+.skills-grid {
+	display: flex;
+	flex-wrap: wrap;
+ 	justify-content: space-around;
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+.skills-grid li {
+  /*transition: 0.3s;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 1rem;
+  margin: 1rem;
+}
+
+.skills-grid-box {
+  	align-content: center;
+	justify-content: space-between;
+	width: 800;
 }
 
 .education {

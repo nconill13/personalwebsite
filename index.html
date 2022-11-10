@@ -95,11 +95,44 @@
 		<div class="content-box" style="color: white">
 			Random words here. About my life or something. Ya know. <br><br>
 			
-			<div class="experience-tabs">
-			  <a href="#" class="active">Air Force</a>
-			  <a href="#">Air Force</a>
-			  <a href="#">Air Force</a>
-			  <a href="#">MITRE</a>
+			<div class="row">
+			
+				<div class="column experience-tabs">
+				  <a href="#" class="active">Air Force</a>
+				  <a href="#">Air Force</a>
+				  <a href="#">Air Force</a>
+				  <a href="#">MITRE</a>
+				</div>
+
+				<div class="column experience-details">
+					
+					<div id="af-career" class="active">Air Force career stuff.</div>
+					
+					<div id="af-internship-1" class="experiencecontent">BIFROST portal stuff.</div>
+					
+					<div id="af-internship-2" class="experiencecontent">CROWS stuff.</div>
+					
+					<div id="mitre-internship" class="experiencecontent">MITRE stuff.</div>
+					
+					<!-- Show Experience Content (JS) -->
+					<script>
+					function openExperience(evt, experienceName) {
+						var i, experiencecontent, experiencelinks;
+						experiencecontent = document.getElementsByClassName("experiencecontent");
+						for (i=0; i < experiencelinks.length; i++) {
+							experiencecontent[i].style.display = "none";
+						}
+						experiencelinks = document.getElementsByClassName("experiencelinks");
+						for (i=0; i < experiencelinks.length; i++) {
+							experiencelinks[i].className = experiencelinks[i].className.replace("active", "")
+						}
+						document.getElementById(experienceName).style.display = "block";
+						evt.currentTarget.className += "active";
+					}
+					</script>
+					
+				</div>
+				
 			</div>
 			
 		</div>

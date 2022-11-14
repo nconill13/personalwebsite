@@ -99,51 +99,48 @@
 		<!-- Experience Table -->
 		<div class="content-box" style="color: white">
 			
-			<div class="row">
-				
-				<!-- Tabs -->
-				<div class="column experience-tabs">
-					<button class="experience-links" onClick="openExperience(event, 'af-career')">Air Force</button>
-					<button class="experience-links" onClick="openExperience(event, 'af-intern-1')">AF PCIP 1</button>
-					<button class="experience-links" onClick="openExperience(event, 'af-intern-2')">AF PCIP 2</button>
-					<button class="experience-links" onClick="openExperience(event, 'mitre')">MITRE</button>
-				</div>
-
-				<!-- Details -->
-			  <div class="column">	
-					
-				  	<div id="af-career" class="experience-content" style="display: block">
-						Will have everything about new career. Struggling with wraps .&nbsp; &nbsp;
-					</div>
-					
-				  <div id="af-intern-1" class="experience-content">
-						Will have everything from my resume shown here nicely for the BIFROST portal.
-					</div>
-					
-				  <div id="af-intern-2" class="experience-content">CROWS stuff.</div>
-					
-				  <div id="mitre" class="experience-content">MITRE stuff.</div>
-					
-				</div>
-					
-				<!-- Show Experience Content (JS) -->
-				<script>
-				function openExperience(evt, experienceName) {
-					var i, experiencecontent, experiencelinks;
-					experiencecontent = document.getElementsByClassName("experience-content");
-					for (i=0; i < experiencecontent.length; i++) {
-						experiencecontent[i].style.display = "none";
-					}
-					experiencelinks = document.getElementsByClassName("experience-links");
-					for (i=0; i < experiencelinks.length; i++) {
-						experiencelinks[i].className = experiencelinks[i].className.replace("active", "")
-					}
-					document.getElementById(experienceName).style.display = "block";
-					evt.currentTarget.className += "active";
-				}
-				</script>
-				
+			<div class="tab">
+  				<button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">London</button>
+  				<button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+  				<button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
 			</div>
+
+			<div id="London" class="tabcontent">
+			  <h3>London</h3>
+			  <p>London is the capital city of England.</p>
+			</div>
+
+			<div id="Paris" class="tabcontent">
+			  <h3>Paris</h3>
+			  <p>Paris is the capital of France.</p> 
+			</div>
+
+			<div id="Tokyo" class="tabcontent">
+			  <h3>Tokyo</h3>
+			  <p>Tokyo is the capital of Japan.</p>
+			</div>
+			
+			<script>
+			function openCity(evt, cityName) {
+			  var i, tabcontent, tablinks;
+			  tabcontent = document.getElementsByClassName("tabcontent");
+			  for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			  }
+			  tablinks = document.getElementsByClassName("tablinks");
+			  for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			  }
+			  document.getElementById(cityName).style.display = "block";
+			  evt.currentTarget.className += " active";
+			}
+
+			// Get the element with id="defaultOpen" and click on it
+			document.getElementById("defaultOpen").click();
+			</script>
+			
+			
+			<div class="row"></div>
 			
 		</div>
 			

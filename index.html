@@ -99,15 +99,19 @@
 		<!-- Experience Table -->
 		<div class="content-box" style="color: white">
 			
-			<div class="tab">
-  				<button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">London</button>
-  				<button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-  				<button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+			
+			
+		 	<div class="tab">
+  				<button class="tablinks" onclick="openExperience(event, 'London')" id="defaultOpen">USAF</button>
+  				<button class="tablinks" onclick="openExperience(event, 'Paris')">USAF PCIP 2</button>
+  				<button class="tablinks" onclick="openExperience(event, 'Tokyo')">USAF PCIP 1</button>
+			  	<button class="tablinks" onclick="openExperience(event, 'Tokyo')">MITRE</button>
 			</div>
 
 			<div id="London" class="tabcontent">
-			  <h3>London</h3>
-			  <p>London is the capital city of England.</p>
+			  <h3>Cyber Security Engineer @ Hanscom, AFB</h3>
+				<div class="dates">January 2023 - Present</div>
+			  <p>To be written, since work hasn't started :)</p>
 			</div>
 
 			<div id="Paris" class="tabcontent">
@@ -120,8 +124,14 @@
 			  <p>Tokyo is the capital of Japan.</p>
 			</div>
 			
+			<div id="MITRE" class="tabcontent">
+			  	<h3>Cyber Security Intern @ MITRE </h3>
+				<div class="dates">May 2020 - August 2020</div>
+			  	<p>Tokyo is the capital of Japan.</p>
+			</div>
+			
 			<script>
-			function openCity(evt, cityName) {
+			function openExperience(evt, cityName) {
 			  var i, tabcontent, tablinks;
 			  tabcontent = document.getElementsByClassName("tabcontent");
 			  for (i = 0; i < tabcontent.length; i++) {
